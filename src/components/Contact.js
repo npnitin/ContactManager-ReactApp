@@ -7,7 +7,7 @@ class Contact extends Component {
     return (
         <div className="card card-body mb-3">
           <h3>{name}</h3>
-          <ul className="liit-group">
+          <ul className="list-group">
               <li className="list-group-item">Email:{email}</li>
               <li className="list-group-item">Phone:{phone}</li>
               </ul>
