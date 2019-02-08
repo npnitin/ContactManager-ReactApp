@@ -1,0 +1,2 @@
+to install boostrap:
+npm install bootstrap---check in package.json
