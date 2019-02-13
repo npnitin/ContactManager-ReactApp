@@ -5,6 +5,7 @@ import Header from './components/layout/Header';
 import Contact from './components/contacts/Contact';
 import Contacts from './components/contacts/Contacts';
 import AddContact from './components/contacts/AddContact';
+import AddContact1 from './components/contacts/AddContact1';
 import { Provider } from './components/context/context';
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
         <div className="App">
         <Header/>
         <div className="container">
-            <AddContact/>
+            <AddContact1/>
             <Contacts/>
         </div>
         </div>
