@@ -9,6 +9,7 @@ import AddContact1 from './components/contacts/AddContact1';
 import { Provider } from './components/context/context';
 import{ BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import About from './components/pages/about';
+import NotFound from './components/pages/NotFound';
 class App extends Component {
   render() {
     return (
@@ -20,7 +21,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Contacts}/>
               <Route exact path="/contact/add" component={AddContact}/>
-              <Route exact path="/about" component={About}/>
+              <Route exact path="/about/:message" component={About}/>
+              <Route component={NotFound}/>
             </Switch> 
             </div>
             </div>

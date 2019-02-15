@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Consumer } from '../context/context';
 class Contact extends Component {
   state={
-    showContactInfo:true,
+    showContactInfo:false,
   }
   onShowClick = (e) => {
    this.setState({

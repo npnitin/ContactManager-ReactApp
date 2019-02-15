@@ -53,7 +53,10 @@ class AddContact extends Component {
             email:'',
             phone:'',
             errors:{}
-        })
+        });
+
+        //redirect to home
+        this.props.history.push('/');
     }
     render() {
         const{name,email,phone,errors}=this.state;
