@@ -28,11 +28,12 @@ export class Provider extends Component{
           reducer(state,action))
       };
 
-componentDidMount(){
-  axios.get('https://jsonplaceholder.typicode.com/users')
-  .then(response => this.setState({
+async componentDidMount(){
+   const response = await axios.get('https://jsonplaceholder.typicode.com/users'); 
+  this.setState({
     contacts:response.data
-  }))
+  })
+  console.log("got data");
 }
       render(){
           return(
